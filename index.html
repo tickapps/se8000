@@ -1,204 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        // 使用JavaScript获取屏幕宽度
-        var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        // 将屏幕宽度输出到控制台
-        console.log("Screen width: " + screenWidth + "px");
-    </script>
-    <title>英语口语8000句</title>
+    <title>英语口语8000句 - 官方支持</title>
     <style>
         body {
-            font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple WebExp Icons Custom", "Apple Legacy Chevron", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f5f5f7;
             color: #1d1d1f;
         }
 
         h2 {
-            font-size: 20px;
-            line-height: 1.2;
-            font-weight: 700;
-            letter-spacing: .024em;
-            font-family: "SF Pro Display", "SF Pro Icons", "Apple WebExp Icons Custom", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 40px;
+            border-bottom: 1px solid #d2d2d7;
+            padding-bottom: 10px;
         }
 
         p {
             line-height: 1.6;
+            color: #424245;
         }
 
-        .app-container {
-            display: -webkit-flex;
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .app-header {
             display: flex;
             align-items: center;
-            justify-content: flex-start;
-            /* flex-wrap: wrap */
-
-            margin: 20px;
+            gap: 30px;
+            margin-bottom: 40px;
         }
 
         .app-icon {
-            max-width: 157px;
-            max-height: 157px;
-            width: auto;
-            height: auto;
-
-            /* flex-shrink: 2; */
-
-            margin-right: 20px;
-            border-radius: 22.5%;
-            overflow: hidden;
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        .app-icon img {
-            width: 100%;
-            height: 100%;
-            display: block;
+        .support-card {
+            background-color: #f5f5f7;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
         }
 
-        .app-title {
-            width: 100%;
-            height: 100%;
-            display: block;
-        }
-
-        .app-desc {
-            /* margin: 20px auto; */
+        .contact-email {
+            font-weight: bold;
+            color: #0066cc;
+            font-size: 18px;
         }
 
         .row {
-            display: -webkit-flex;
             display: flex;
-            justify-content: space-around;
-            /* 水平居中 */
-            align-items: center;
-            /* 垂直居中 */
+            justify-content: space-between;
             flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
         }
 
-        /* 当屏幕宽度小于500像素时应用这些样式 */
-        @media screen and (max-width: 499px) {
-
-            .container {
-                max-width: 100%;
-                margin: 0px auto;
-                padding: 20px;
-                background-color: #fff;
-            }
-
-            .column {
-                margin: 10px auto;
-                background-color: white;
-            }
-
-            .screenshot {
-                width: 260px;
-                height: auto;
-                display: block;
-                border-radius: 20px;
-                overflow: hidden;
-            }
-        }
-
-        /* 当屏幕宽度大于500像素时应用这些样式 */
-        @media screen and (min-width: 500px) {
-
-            .container {
-                max-width: 1100px;
-                margin: 20px auto;
-                padding: 20px;
-                background-color: #fff;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-
-            .column {
-                margin: 10px auto;
-                flex: auto;
-                background-color: white;
-            }
-
-            .screenshot {
-                width: 200px;
-                height: auto;
-                display: block;
-                border-radius: 20px;
-                overflow: hidden;
-            }
-        }
-
-
-
-        ul {
-            list-style-type: none;
-            padding: 0px;
-        }
-
-        li {
-            line-height: 2;
+        .screenshot {
+            width: calc(25% - 20px);
+            min-width: 160px;
+            border-radius: 12px;
+            border: 1px solid #d2d2d7;
         }
 
         footer {
             text-align: center;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #ccc;
-            font-size: 14px;
+            margin-top: 60px;
+            padding: 30px 0;
+            border-top: 1px solid #d2d2d7;
+            font-size: 12px;
+            color: #86868b;
         }
 
-        .icp {
+        a {
+            color: #0066cc;
             text-decoration: none;
-            /* Removes the underline */
-            color: black
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .app-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .row {
+                justify-content: center;
+            }
+
+            .screenshot {
+                width: calc(50% - 10px);
+            }
         }
     </style>
 </head>
 
 <body>
-    <script>
-
-    </script>
-
     <div class="container">
-        <!-- 应用程序图标 -->
-        <div class="app-container">
-            <div class="app-icon">
-                <img src="appicon.png" alt="App Icon">
+        <!-- 头部信息 -->
+        <header class="app-header">
+            <img src="appicon.png" alt="App Icon" class="app-icon">
+            <div>
+                <h1>英语口语8000句</h1>
+                <p>地道口语练习，智能发音评分</p>
             </div>
-            <h1 class="app-title">英语口语8000句</h1>
-        </div>
+        </header>
 
-        <div class="app-desc">
-            <p>英语口语8000句是一款专为用户提供方便、快捷、高质量英语口语学习的手机应用。无论您是在家、在办公室还是在旅途中，只需使用手机即可轻松学习英语口语。</p>
-        </div>
+        <!-- 针对 1.5 审核问题的技术支持板块 -->
+        <section id="support" class="support-card">
+            <h2>技术支持与反馈 (Support)</h2>
+            <p>如果您在使用《英语口语8000句》过程中遇到任何问题，或有改进建议，请随时联系我们。我们的团队通常会在 24 小时内回复您。</p>
+            <p>联系邮箱：<span class="contact-email">ghj1982@gmail.com</span></p>
+        </section>
 
-        <h2>产品特色：</h2>
-        <ul>
-            <li>1. **完全免费**：核心功能免费使用，无需购买即可学习。</li>
-            <li>2. **简单易用**：选择场景，录音跟读，智能评分，一键开始学习。</li>
-            <li>3. **8000句实用口语**：涵盖旅行、工作、生活、学习等日常场景的实用英语句子。</li>
-            <li>4. **智能跟读打分**：AI算法分析发音，提供准确性评分和改进建议。</li>
-            <li>5. **标准发音示范**：高质量音频示范，帮助您掌握地道英语发音。</li>
-            <li>6. **离线学习**：无需网络连接，随时随地练习口语。</li>
-        </ul>
+        <section>
+            <h2>产品特色</h2>
+            <ul>
+                <li><strong>完全免费：</strong>核心功能永久免费。</li>
+                <li><strong>智能跟读：</strong>利用本地语音识别技术进行实时发音打分。</li>
+                <li><strong>海量内容：</strong>涵盖 8000 句涵盖生活各个方面的实用口语。</li>
+                <li><strong>隐私保护：</strong>所有语音分析均在本地完成，不上传个人隐私数据。</li>
+            </ul>
+        </section>
 
-        <p>无论您是英语初学者还是希望提高口语水平，英语口语8000句都能满足您的需求，为您提供便捷、高效的英语口语学习体验。</p>
-
-        <h2>应用截图</h2>
-        <p>以下是应用的部分界面截图，展示各种学习场景和智能评分功能。</p>
-
-        <div class="row">
-            <div class="column"><img class="screenshot" src="1.png" alt="Screenshot 1"></div>
-            <div class="column"><img class="screenshot" src="2.png" alt="Screenshot 2"></div>
-            <div class="column"><img class="screenshot" src="3.png" alt="Screenshot 3"></div>
-            <div class="column"><img class="screenshot" src="4.png" alt="Screenshot 4"></div>
-        </div>
+        <section>
+            <h2>应用截图</h2>
+            <div class="row">
+                <img class="screenshot" src="1.png" alt="Screenshot 1">
+                <img class="screenshot" src="2.png" alt="Screenshot 2">
+                <img class="screenshot" src="3.png" alt="Screenshot 3">
+                <img class="screenshot" src="4.png" alt="Screenshot 4">
+            </div>
+        </section>
 
         <footer>
+            <p>
+                <a href="./privacypolicy.html">隐私政策 (Privacy Policy)</a> |
+                <a href="#support">技术支持 (Support)</a>
+            </p>
             Copyright &copy; 2026 English Learning Lab. 保留所有权利。
         </footer>
     </div>
